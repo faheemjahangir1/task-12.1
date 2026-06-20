@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Student Form</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Student Registration Form</h1>
+
+      <form id="studentForm">
+        <div class="form-group">
+          <label for="fname">
+            <i class="fa-solid fa-user"></i> First Name
+          </label>
+          <input type="text" id="fname" required placeholder="Enter your name" />
+        </div>
+
+        <div class="form-group">
+          <label for="lname">
+            <i class="fa-solid fa-user"></i>Last Name
+          </label>
+          <input type="text" id="lname" required placeholder="Enter your last name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">
+            <i class="fa-solid fa-envelope"></i> Email
+          </label>
+          <input type="email" id="email" required  placeholder="Enter your email"/>
+        </div>
+
+        <div class="form-group full">
+          <label for="address">
+            <i class="fa-solid fa-location-dot"></i> Address
+          </label>
+          <textarea id="address" required placeholder="Enter your address"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="pincode">
+            <i class="fa-solid fa-map-pin"></i> Pincode
+          </label>
+          <input type="number" id="pincode" required  placeholder="Enter your pincode"/>
+        </div>
+
+        <div class="form-group">
+          <label> <i class="fa-solid fa-venus-mars"></i> Gender </label>
+
+          <div class="radio-box">
+            <label for="male">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="Male"
+                required
+              />
+              Male
+            </label>
+
+            <label for="female">
+              <input type="radio" id="female" name="gender" value="Female" />
+              Female
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="state"> <i class="fa-solid fa-map"></i> State </label>
+          <input type="text" id="state" required placeholder="Enter your state"/>
+        </div>
+
+        <div class="form-group">
+          <label for="country">
+            <i class="fa-solid fa-earth-asia"></i> Country
+          </label>
+          <input type="text" id="country" required placeholder="Enter your country" />
+        </div>
+
+        <div class="full">
+          <button type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Pincode</th>
+          <th>Gender</th>
+          <th>State</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
